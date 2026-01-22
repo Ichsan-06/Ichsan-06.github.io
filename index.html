@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
-
-<!-- Mirrored from geniusdevs.com/themeforest/icard/icard/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jan 2022 04:27:38 GMT -->
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> M. Ichsan - Portofolio </title>
+	<title>M. Ichsan - Portfolio Developer</title>
 	<!-- favicon -->
 	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+		rel="stylesheet">
+
 	<!-- animate css -->
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<!-- bootstrap -->
@@ -23,6 +27,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- responsive css -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -34,6 +40,7 @@
 		</div>
 	</div>
 	<!-- preloader area end -->
+
 	<!-- Menu toggle Icon Start -->
 	<div class="toggle-icon">
 		<div id="nav-icon3">
@@ -44,6 +51,7 @@
 		</div>
 	</div>
 	<!-- Menu toggle Icon End -->
+
 	<!-- Main Website wrapper start -->
 	<div id="main">
 		<!--Main-Menu Area Start-->
@@ -51,52 +59,62 @@
 			<nav class="my-navbar">
 				<ul class="navbar-links">
 					<li class="mynav-item active">
-						<a class="mynav-link active" href="#home">Home</a>
+						<a class="mynav-link active" href="#home">Beranda</a>
 					</li>
 					<li class="mynav-item">
-						<a class="mynav-link" href="#about">About</a>
+						<a class="mynav-link" href="#about">Tentang</a>
 					</li>
 					<li class="mynav-item">
 						<a class="mynav-link" href="#resume">Resume</a>
 					</li>
 					<li class="mynav-item portfolio">
-						<a class="mynav-link portfolio" href="#portfolio">Portfolio</a>
+						<a class="mynav-link portfolio" href="#portfolio">Portofolio</a>
 					</li>
 					<li class="mynav-item">
 						<a class="mynav-link" href="#blog">Blog</a>
 					</li>
 					<li class="mynav-item">
-						<a class="mynav-link" href="#contact">Contact</a>
+						<a class="mynav-link" href="#contact">Kontak</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
-		<!--Main-Menu Area Start-->
+		<!--Main-Menu Area End-->
 
 		<!--Hero Area Start-->
 		<section class="home section-bg active" id="home">
 			<div class="h-100vh d-flex align-items-center">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
+					<div class="row align-items-center">
+						<div class="col-lg-6 order-2 order-lg-1">
 							<div class="main-profile-image">
-								<img src="assets/images/my.jpg" alt="" style="height: 670px;">
+								<img src="assets/images/my.jpg" alt="M. Ichsan Profile" class="img-fluid">
 							</div>
 						</div>
-						<div class="col-lg-6  align-self-center">
+						<div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0">
 							<div class="hero-box text-left">
-								<span class="greeting">HALLO</span>
-								<h2 class="name">
-									Saya <span>M. ICHSAN</span>
+								<span class="greeting">Hi, nama saya</span>
+								<h1 class="name">
+									M. Ichsan.
+								</h1>
+								<h2 class="name" style="font-size: 40px; color: var(--text-main);">
+									Frontend & Backend Developer.
 								</h2>
 
-								<h4 class="header_title"> I Do <span id="typed"></span></h4>
+								<h4 class="header_title"
+									style="font-family: 'JetBrains Mono', monospace; font-size: 18px; color: var(--accent);">
+									> I Build <span id="typed"></span>
+								</h4>
 								<p class="short-info">
-									Pengalaman saya sekitar 2 tahun di bidang web Development.
-									saya sedang kuliah jurusan Teknologi Informasi di Universitas Harapan Medan dan sekaligus sebagai freelance. Keahlian saya meliputi PHP, Laravel, jQuery,Vue, JavaScript dan mysql.
+									Saya adalah Web Developer (Backend-focused) dengan pengalaman lebih dari 3 tahun
+									dalam mengembangkan aplikasi dan sistem berbasis web. Terbiasa membangun core
+									system, sistem keuangan, dan aplikasi bisnis menggunakan Laravel, PHP, Node.js,
+									Vue.js, MySQL, dan PostgreSQL Dll.
 								</p>
-								<a id="g-p-f-h" class="pagelink mybtn mybtn-bg" href="#portfolio"><span><i
-											class="fas fa-briefcase"></i>Portfolio</span></a>
+								<div class="btn-wrapper mt-4">
+									<a class="mybtn mybtn-bg" href="#portfolio">Lihat Karya Saya</a>
+									<a class="mybtn ml-3" href="#contact">Hubungi Saya</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -106,458 +124,259 @@
 		<!--Hero Area End-->
 
 		<!-- About Area Start -->
-		<section id="about" class="about-area section-padding section-bg">
+		<section id="about" class="about-area section-padding section-bg mt-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-heading">
 							<h2 class="s-h-title">
-								About <span>Me</span>
+								Tentang <span>Saya</span>
 							</h2>
+							<p class="text">
+								Sedikit informasi lengkap tentang latar belakang dan kemampuan teknis saya.
+							</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="about-box">
+						<div class="about-box glass-card">
 							<div class="row">
-								<div class="col-lg-12 d-flex align-self-center">
+								<div class="col-lg-6">
 									<div class="about-content">
+										<p class="mb-4">
+											Halo! Nama saya Muhammad Ichsan dan saya senang membuat hal-hal yang hidup
+											di internet. Ketertarikan saya pada pengembangan web dimulai pada tahun 2017
+											ketika saya mulai belajar rekayasa perangkat lunak.
+										</p>
+										<p class="mb-4">
+											Saat ini, saya sedang bekerja di salah satu perusahaan di<span
+												style="color:var(--accent)">Jakarta</span> sekaligus
+											bekerja sebagai <span style="color:var(--accent)">Freelancer</span>.
+										</p>
 										<ul class="info-list">
 											<li>
-												<span class="title">Nama Depan : </span>
-												<span class="value">Muhammad</span>
+												<span class="title">Nama Lengkap</span>
+												<span class="value">Muhammad Ichsan</span>
 											</li>
 											<li>
-												<span class="title">Nama Belakang : </span>
-												<span class="value">Ichsan</span>
+												<span class="title">Umur</span>
+												<span class="value">25 Tahun</span>
 											</li>
 											<li>
-												<span class="title">Umur : </span>
-												<span class="value">21</span>
+												<span class="title">Domisili</span>
+												<span class="value">Jakarta, Indonesia</span>
 											</li>
 											<li>
-												<span class="title">Tanggal Lahir : </span>
-												<span class="value">06 May 2001</span>
+												<span class="title">Email</span>
+												<span class="value">013ichsanm@gmail.com</span>
 											</li>
 											<li>
-												<span class="title">Negara : </span>
-												<span class="value">INDONESIA</span>
-											</li>
-											<li>
-												<span class="title">Bahasa : </span>
-												<span class="value">Bahasa Indonesia</span>
-											</li>
-											<li>
-												<span class="title">Telpon : </span>
-												<span class="value">+6285 2628 27436</span>
-												<span class="value">+6283 1941 03013</span>
-											</li>
-											<li>
-												<span class="title">Email : </span>
-												<span class="value">014ichsanm@gmail.com</span>
-											</li>
-											<li>
-												<span class="title">Freelance : </span><span class="value">Available</span>
-											</li>
-											<li>
-												<span class="title">Experience : </span><span class="value">2 years</span>
-											</li>
-											<li>
-												<span class="title">Instagram : </span><span class="value">Ichsan-06</span>
-											</li>
-											<li>
-												<span class="title">Alamat :</span>
-												<span class="value">Jln.Bersama Gg.Ikhlas No.2</span>
+												<span class="title">Status</span>
+												<span class="value" style="color: var(--accent)">Open for
+													Freelance</span>
 											</li>
 										</ul>
 									</div>
 								</div>
-								<!-- <div class="col-lg-6 d-flex align-self-center">
-									<div class="about-content">
-										<div class="my-acivment-list">
-											<div class="row">
-												<div class="col-md-6">
-													<div class="single-acivment one">
-														<div class="top-area">
-															<div class="icon">
-																<i class="far fa-heart"></i>
-															</div>
-															<div class="number">
-																<span class="n-counter">368</span><span class="plus">+</span>
-															</div>
-														</div>
-														<div class="content">
-
-															<h6 class="title">
-																Happy Clients
-															</h6>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="single-acivment two">
-														<div class="top-area">
-															<div class="icon">
-																<i class="fas fa-briefcase"></i>
-															</div>
-															<div class="number">
-																<span class="n-counter">658</span><span class="plus">+</span>
-															</div>
-														</div>
-														<div class="content">
-
-															<h6 class="title">
-																Project Done
-															</h6>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="single-acivment">
-														<div class="top-area">
-															<div class="icon">
-																<i class="fas fa-cloud-download-alt"></i>
-															</div>
-															<div class="number">
-																<span class="n-counter">503</span><span class="plus">+</span>
-															</div>
-														</div>
-														<div class="content">
-
-															<h6 class="title">
-																Files Downloaded
-															</h6>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="single-acivment">
-														<div class="top-area">
-															<div class="icon">
-																<i class="fas fa-medal"></i>
-															</div>
-															<div class="number">
-																<span class="n-counter">72</span><span class="plus">+</span>
-															</div>
-														</div>
-														<div class="content">
-															<h6 class="title">
-																Awards Won
-															</h6>
-														</div>
-													</div>
-												</div>
+								<div class="col-lg-6 align-self-center text-center">
+									<div class="tech-stack-display">
+										<h4 class="mb-4 text-left">Teknologi yang saya gunakan:</h4>
+										<div class="row">
+											<div class="col-6 mb-3 text-left">
+												<ul style="list-style: none; padding: 0;">
+													<li><i class="fas fa-caret-right" style="color:var(--accent)"></i>
+														Nuxt.js / Vue.js / React.js</li>
+													<li><i class="fas fa-caret-right" style="color:var(--accent)"></i>
+														Laravel / PHP / Node.js</li>
+													<li><i class="fas fa-caret-right" style="color:var(--accent)"></i>
+														JavaScript (ES6+)</li>
+												</ul>
+											</div>
+											<div class="col-6 mb-3 text-left">
+												<ul style="list-style: none; padding: 0;">
+													<li><i class="fas fa-caret-right" style="color:var(--accent)"></i>
+														MySQL / PostgreSQL</li>
+													<li><i class="fas fa-caret-right" style="color:var(--accent)"></i>
+														SQL Server</li>
+													<li><i class="fas fa-caret-right" style="color:var(--accent)"></i>
+														Git & GitHub</li>
+												</ul>
 											</div>
 										</div>
 									</div>
-								</div> -->
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row w-i-d">
+
+				<div class="row w-i-d mt-5">
 					<div class="col-lg-12">
 						<div class="section-heading">
-							<h2 class="s-h-title">
-								Keahlian <span>Saya</span>
-							</h2>
+							<h3 class="s-h-title">
+								Keahlian <span>& Layanan</span>
+							</h3>
 						</div>
 					</div>
 				</div>
 				<div class="row service-area-wrapper">
 					<div class="col-lg-4 col-md-6">
-						<a href="ajax/service1.html" class="single-service service-modal ">
-							<img src="assets/images/php.svg" alt="">
-							<h6 class="title">PHP</h6>
-							<!-- <p>Hopes lived by rooms oh in no death house. Contented direction september but end led excellent
-								ourselves.</p> -->
+						<a href="#" class="single-service">
+							<img src="assets/images/php.svg" alt="PHP" style="height: 60px; margin-bottom: 20px;">
+							<h6 class="title">Backend Development</h6>
+							<p>Membangun sistem logika yang kuat dan API yang efisien dengan PHP dan Laravel.</p>
 						</a>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<a href="ajax/service2.html" class="single-service service-modal ">
-							<img src="assets/images/js.png" alt="">
-							<h6 class="title">Javascript</h6>
-							<!-- <p>Hopes lived by rooms oh in no death house. Contented direction september but end led excellent
-								ourselves.</p> -->
+						<a href="#" class="single-service">
+							<img src="assets/images/js.png" alt="Javascript" style="height: 60px; margin-bottom: 20px;">
+							<h6 class="title">Interactive Frontend</h6>
+							<p>Menciptakan antarmuka yang dinamis dan responsif menggunakan Modern JavaScript.</p>
 						</a>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<a href="ajax/service3.html" class="single-service service-modal ">
-							<img src="assets/images/mysql.png" alt="">
-							<h6 class="title">MySql</h6>
+						<a href="#" class="single-service">
+							<img src="assets/images/mysql.png" alt="MySQL" style="height: 60px; margin-bottom: 20px;">
+							<h6 class="title">Database Management</h6>
+							<p>Perancangan dan optimasi database untuk performa aplikasi yang maksimal.</p>
 						</a>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<a href="ajax/service4.html" class="single-service service-modal ">
-							<img src="assets/images/vue.png" alt="">
-							<h6 class="title">VUE</h6>
+						<a href="#" class="single-service">
+							<img src="assets/images/vue.png" alt="Vue" style="height: 60px; margin-bottom: 20px;">
+							<h6 class="title">Single Page Apps</h6>
+							<p>Pengembangan aplikasi web modern yang cepat dengan Vue.js.</p>
 						</a>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<a href="ajax/service5.html" class="single-service service-modal ">
-							<img src="assets/images/git.png" alt="" style="width: 180px">
-							<h6 class="title">Git</h6>
+						<a href="#" class="single-service">
+							<img src="assets/images/git.png" alt="Git" style="height: 60px; margin-bottom: 20px;">
+							<h6 class="title">Version Control</h6>
+							<p>Manajemen kode sumber yang terstruktur rapi menggunakan Git.</p>
 						</a>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<a href="ajax/service6.html" class="single-service service-modal ">
-							<img src="assets/images/laravel.png" alt="" style="width: 187px">
-							<h6 class="title">Laravel</h6>
+						<a href="#" class="single-service">
+							<img src="assets/images/laravel.png" alt="Laravel"
+								style="height: 60px; margin-bottom: 20px;">
+							<h6 class="title">Fullstack Solutions</h6>
+							<p>Pengembangan aplikasi menyeluruh dari depan hingga belakang.</p>
 						</a>
 					</div>
 				</div>
 			</div>
-
 		</section>
 		<!-- About Area End -->
 
 		<!-- Resume Area Start -->
-		<section id="resume" class="about-area section-padding section-bg">
+		<section id="resume" class="about-area section-padding section-bg mt-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-heading">
 							<h2 class="s-h-title">
-								My <span>Resume</span>
+								Resume <span>Saya</span>
 							</h2>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="about-box">
-							<div class="row">
-								<div class="col-lg-6 d-flex align-self-center">
-									<div class="about-content">
-										<a href="assets/images/cv.pdf" download class="mybtn mybtn-bg"> <span><i class="fas fa-download"></i>Download My CV</span> </a>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="row mb-5">
+					<div class="col-lg-12 text-center">
+						<a href="assets/images/cv.pdf" download class="mybtn mybtn-bg">
+							<span><i class="fas fa-download"></i> Unduh CV Lengkap</span>
+						</a>
 					</div>
 				</div>
-			</div>
-			<div id="eduandex" class="eduandex">
-				<div class="container">
 
-					<div class="row skill-area" id="statisticsSection">
-						<div class="col-lg-6 skill-area-line">
-							<div class="skill-box">
-								<h4 class="title">
-									Coding Skills
-								</h4>
-								<div class="skill-list">
-									<div class="single-skill">
-										<div class="label">
-											<span>Laravel</span>
-											<span>80%</span>
-										</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-												aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-										</div>
-									</div>
-									<div class="single-skill">
-										<div class="label">
-											<span>CSS</span>
-											<span>95%</span>
-										</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-												aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
-										</div>
-									</div>
-									<div class="single-skill">
-										<div class="label">
-											<span>VUE</span>
-											<span>75%</span>
-										</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-												aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-										</div>
-									</div>
-									<div class="single-skill">
-										<div class="label">
-											<span>JS</span>
-											<span>90%</span>
-										</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-												aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 skill-area-circle">
-							<div class="skill-box">
-								<h4 class="title">
-									Professional Skills
-								</h4>
-								<div class="skill-list">
-									<div class="single-skill">
-										<div class="progress-circle position" data-percent="90" data-duration="1000"
-											data-color="#e9ecef, 304CFD"></div>
-										<div class="label mt-1 d-block text-center">
-											<span>Web Design</span>
-										</div>
-									</div>
-									<div class="single-skill">
-										<div class="progress-circle position" data-percent="96" data-duration="1000"
-											data-color="#e9ecef, 304CFD"></div>
-										<div class="label mt-1 d-block text-center">
-											<span>Web Devlopment</span>
-										</div>
-									</div>
-									<div class="single-skill">
-										<div class="progress-circle position" data-percent="80" data-duration="1000"
-											data-color="#e9ecef, 304CFD"></div>
-										<div class="label mt-1 d-block text-center">
-											<span>Graphic Design</span>
-										</div>
-									</div>
-									<div class="single-skill">
-										<div class="progress-circle position" data-percent="82" data-duration="1000"
-											data-color="#e9ecef, 304CFD"></div>
-										<div class="label mt-1 d-block text-center">
-											<span>Auto CAD</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- <div class="col-lg-6 skill-area-circle">
-							<div class="skill-box">
-								<h4 class="title">
-									Basic Knowledge
-								</h4>
-								<div class="skill-list">
-									<ul class="single-list-ul">
-										<li>
-											<p>Search engine marketing</p>
-										</li>
-										<li>
-											<p>iOS and android apps</p>
-										</li>
-										<li>
-											<p>Spreadsheets (Excel, Google Spreadsheets, etc.)</p>
-										</li>
-										<li>
-											<p>Email Communication</p>
-										</li>
-										<li>
-											<p>Presentation software (PowerPoint, Keynote)</p>
-										</li>
-										<li>
-											<p>Office suites (Microsoft Office, G Suite)</p>
-										</li>
-										<li>
-											<p>Operating systems (Windows and MacOS)</p>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div> -->
-					</div>
+				<div id="eduandex" class="eduandex">
 					<div class="row">
 						<div class="col-lg-6">
-							<div class="edu-box">
-								<h2 class="title">Pendidikan</h2>
-								<div class="row">
-									<div class="col-12">
-										<div class="education-list">
-											<div class="single-education">
-												<h4 class="collage-name">
-													Universitas Harapan Medan
-												</h4>
-												<p class="degree">Teknik Informatika<span class="year">2020 - Present</span>
-												</p>
-												<div class="description">
-													<p>
-														Mahasiswa di universitas Harapan Medan, Medan Kota, Kota Medan, Sumatera Utara
-													</p>
-												</div>
-											</div>
-											<div class="single-education">
-												<h4 class="collage-name">
-													Universitas Islam Negeri Sumatera Utara
-												</h4>
-												<p class="degree">Ilmu Komputer<span class="year">2019 - 2020</span>
-												</p>
-												<div class="description">
-													<p>
-														Sebagai mahasiswa di UINSU jurusan Ilmu komputer selama 2 Semester dan melanjutkan pendidikan di Universitas Harapan Medan 
-													</p>
-												</div>
-											</div>
-											<div class="single-education">
-												<h4 class="collage-name">
-													SMK Tritech Informatika
-												</h4>
-												<p class="degree">Rekayasa Perangkat Lunak<span class="year">2017 - 2019</span>
-												</p>
-												<div class="description">
-													<p>
-														Sebagai pelajar di SMK IT di medan yaitu SMK Tritech Informatika Medan dan mengambil jurusan Rekayasa
-														Perangkat Lunak
-													</p>
-												</div>
-											</div>
+							<div class="edu-box glass-card h-100">
+								<h3 class="title mb-4" style="color: var(--accent)">Pendidikan</h3>
+								<div class="education-list">
+									<div class="single-education">
+										<h4 class="collage-name">
+											Universitas Harapan Medan
+										</h4>
+										<p class="degree">Teknik Informatika <span class="year">2020 - Sekarang</span>
+										</p>
+										<div class="description">
+											<p>Mendalami ilmu komputer lanjut, algoritma, dan pengembangan perangkat
+												lunak skala besar.</p>
+										</div>
+									</div>
+									<div class="single-education">
+										<h4 class="collage-name">
+											Universitas Islam Negeri Sumatera Utara
+										</h4>
+										<p class="degree">Ilmu Komputer <span class="year">2019 - 2020</span></p>
+										<div class="description">
+											<p>Studi awal ilmu komputer sebelum melanjutkan fokus spesifik di
+												Universitas Harapan.</p>
+										</div>
+									</div>
+									<div class="single-education">
+										<h4 class="collage-name">
+											SMK Tritech Informatika
+										</h4>
+										<p class="degree">Rekayasa Perangkat Lunak <span class="year">2017 - 2019</span>
+										</p>
+										<div class="description">
+											<p>Fondasi awal dalam pemrograman, database, dan logika pengembangan
+												aplikasi.</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-lg-6">
-							<div class="edu-box">
-								<h2 class="title">Pengalaman</h2>
-								<div class="row">
-									<div class="col-12">
-										<div class="education-list">
-											<div class="single-education">
-												<h4 class="collage-name">
-													PT.Literasia Edutekno Digital
-												</h4>
-												<p class="degree">Backend Developer <span class="year">2021 - Present</span>
-												</p>
-												<div class="description">
-													<p>
-														Bekerja sebagai backend Developer di perusahaan PT.Literasia Edutekno Digital. menggunakan Laravel
-														sebagai system nya.
-													</p>
-												</div>
-											</div>
-											<div class="single-education">
-												<h4 class="collage-name">
-													Freelance Developer
-												</h4>
-												<p class="degree">Web Developer <span class="year">2020 -
-														2021</span>
-												</p>
-												<div class="description">
-													<p>
-														bekerja sebagai web developer, mengambil project untuk membuat website aplikasi maupun website company
-													</p>
-												</div>
-											</div>
-											<div class="single-education">
-												<h4 class="collage-name">
-													PT. Telekomunikasi Selular
-												</h4>
-												<p class="degree">Ui/Ux Desaigner <span class="year">2017 -
-														2018</span>
-												</p>
-												<div class="description">
-													<p>
-														magang sebagai Ui/Ux desaigner di salah satu perusahaan ternama di indonesia yaitu Telkomsel selama 
-														2 bulan
-													</p>
-												</div>
-											</div>
-											
+						<div class="col-lg-6 mt-4 mt-lg-0">
+							<div class="edu-box glass-card h-100">
+								<h3 class="title mb-4" style="color: var(--accent)">Pengalaman Kerja</h3>
+								<div class="education-list">
+									<div class="single-education">
+										<h4 class="collage-name">
+											PT. Damai Nusa Abadi - Medan
+										</h4>
+										<p class="degree">Backend Developer <span class="year">Feb 2024 - Mei
+												2025</span></p>
+										<div class="description">
+											<p>Membuat REST API dengan SLIM 3, merancang database untuk aplikasi
+												perhotelan dan POS, serta integrasi third-party.</p>
+										</div>
+									</div>
+									<div class="single-education">
+										<h4 class="collage-name">
+											Vodjo Teknologi Indonesia - Bandung
+										</h4>
+										<p class="degree">Fullstack Developer <span class="year">Jan 2023 - Jan
+												2024</span></p>
+										<div class="description">
+											<p>Mengembangkan aplikasi dengan Nuxt.js, Node.js, dan Laravel. Menguji
+												kelayakan aplikasi sebelum delivery ke client.</p>
+										</div>
+									</div>
+									<div class="single-education">
+										<h4 class="collage-name">
+											PT. Literasia Edu Tekno Digital - Medan
+										</h4>
+										<p class="degree">Lead Development Project <span class="year">Jan 2022 - Nov
+												2022</span></p>
+										<div class="description">
+											<p>Merancang database aplikasi dan mengatur timeline pengerjaan antara tim
+												Backend dan Frontend Developer.</p>
+										</div>
+									</div>
+									<div class="single-education">
+										<h4 class="collage-name">
+											PT. Literasia Edu Tekno Digital - Medan
+										</h4>
+										<p class="degree">Backend Developer <span class="year">Okt 2021 - Des
+												2021</span></p>
+										<div class="description">
+											<p>Membuat REST API menggunakan Laravel dan MySQL, serta melakukan Unit
+												Testing dalam pengembangan.</p>
 										</div>
 									</div>
 								</div>
@@ -570,463 +389,278 @@
 		<!-- Resume Area End -->
 
 		<!-- Portfolio Area Start -->
-		<section id="portfolio" class="project-gallery section-padding  section-bg">
+		<section id="portfolio" class="project-gallery section-padding section-bg">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-heading">
 							<h2 class="s-h-title">
-								My <span>Portfolio</span>
+								Karya <span>Saya</span>
 							</h2>
+							<p>Beberapa proyek yang telah saya kerjakan.</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="project-gallery-filter d-flex justify-content-center">
+						<div class="project-gallery-filter d-flex justify-content-center mb-5">
 							<ul class="project-gallery-menu d-inline-block">
-								<li class="filter active" data-filter="all">All</li>
-								<!-- <li class="filter" data-filter=".cat-1">Marketing</li>
-								<li class="filter" data-filter=".cat-2">Management</li>
-								<li class="filter" data-filter=".cat-3">Consulting</li> -->
+								<li class="filter active" data-filter="all">Semua</li>
+								<li class="filter" data-filter=".web-app">Web Apps</li>
+								<li class="filter" data-filter=".company">Company Profile</li>
+								<li class="filter" data-filter=".marketplace">Marketplace</li>
 							</ul>
 						</div>
 						<div class="row project-gallery-item">
-							<div class="mix col-md-6 col-lg-4 gallery-item cat-1 cat-3">
-								<a href="ajax/portfolio-ajax-project-1.html" class="gallery-item-content pp">
-									<div  class="item-thumbnail">
-										<img src="assets/images/nur1.png" alt="">
+							<div class="mix col-md-6 col-lg-4 gallery-item company">
+								<a href="#" class="gallery-item-content">
+									<div class="item-thumbnail">
+										<img src="assets/images/src1.png" alt="SMK Kartini Utama">
 										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Website SMK Kartini Utama
-												</h4>
-												<span class="project-category">Web Company</span>
+											<div class="content text-center">
+												<h4 class="project-title">SMK Kartini Utama</h4>
+												<span class="project-category">Web Company Profile</span>
 											</div>
 										</div>
 									</div>
 								</a>
 							</div>
-							<div class="mix col-md-6 col-lg-4 gallery-item  cat-3 cat-4">
-								<a href="ajax/portfolio-ajax-project-2.html" class="gallery-item-content pp">
+							<!-- Project 1 -->
+							<div class="mix col-md-6 col-lg-4 gallery-item company">
+								<a href="#" class="gallery-item-content">
 									<div class="item-thumbnail">
-										<img src="assets/images/job1.png" alt="">
+										<img src="assets/images/nur1.png" alt="SMK Kartini Utama">
 										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Aplikasi Joobsekeer
-												</h4>
-												<span class="project-category">Web App</span>
+											<div class="content text-center">
+												<h4 class="project-title">SMK Kartini Utama</h4>
+												<span class="project-category">Web Company Profile</span>
 											</div>
 										</div>
 									</div>
 								</a>
 							</div>
-							<div class="mix col-md-6 col-lg-4 gallery-item cat-2 cat-1">
-								<a href="ajax/portfolio-ajax-project-3.html" class="gallery-item-content pp">
+							<!-- Project 2 -->
+							<div class="mix col-md-6 col-lg-4 gallery-item web-app">
+								<a href="#" class="gallery-item-content">
 									<div class="item-thumbnail">
-										<img src="assets/images/kamp1.png" alt="">
+										<img src="assets/images/job1.png" alt="Aplikasi Jobseeker">
 										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													SIKAMPUS
-												</h4>
-												<span class="project-category">Web App</span>
+											<div class="content text-center">
+												<h4 class="project-title">Aplikasi Jobseeker</h4>
+												<span class="project-category">Web Application</span>
 											</div>
 										</div>
 									</div>
 								</a>
 							</div>
-							<div class="mix col-md-6 col-lg-4 gallery-item cat-1 cat-3">
-								<a href="ajax/portfolio-ajax-project-4.html" class="gallery-item-content pp">
+							<!-- Project 3 -->
+							<div class="mix col-md-6 col-lg-4 gallery-item web-app">
+								<a href="#" class="gallery-item-content">
 									<div class="item-thumbnail">
-										<img src="assets/images/mart1.png" alt="">
+										<img src="assets/images/kamp1.png" alt="SIKAMPUS">
 										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Wolmart
-												</h4>
-												<span class="project-category">Marketplace</span>
+											<div class="content text-center">
+												<h4 class="project-title">SIKAMPUS</h4>
+												<span class="project-category">Academic System</span>
 											</div>
 										</div>
 									</div>
 								</a>
 							</div>
-							<div class="mix col-md-6 col-lg-4 gallery-item cat-3 cat-4">
-								<a href="ajax/portfolio-ajax-project-5.html" class="gallery-item-content pp">
+							<!-- Project 4 -->
+							<div class="mix col-md-6 col-lg-4 gallery-item marketplace">
+								<a href="#" class="gallery-item-content">
 									<div class="item-thumbnail">
-										<img src="assets/images/fud1.jpg" alt="">
+										<img src="assets/images/mart1.png" alt="Wolmart">
 										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Fudiku
-												</h4>
-												<span class="project-category">Food Delivery</span>
+											<div class="content text-center">
+												<h4 class="project-title">Wolmart</h4>
+												<span class="project-category">E-Commerce</span>
 											</div>
 										</div>
 									</div>
 								</a>
 							</div>
-							<!-- <div class="mix col-md-6 col-lg-4 gallery-item cat-1 cat-2">
-								<a href="ajax/portfolio-ajax-project-3.html" class="gallery-item-content pp">
+							<!-- Project 5 -->
+							<div class="mix col-md-6 col-lg-4 gallery-item marketplace">
+								<a href="#" class="gallery-item-content">
 									<div class="item-thumbnail">
-										<img src="assets/images/6.jpg" alt="">
+										<img src="assets/images/fud1.jpg" alt="Fudiku">
 										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Project Title
-												</h4>
-												<span class="project-category">Marketing</span>
+											<div class="content text-center">
+												<h4 class="project-title">Fudiku</h4>
+												<span class="project-category">Food Delivery App</span>
 											</div>
 										</div>
 									</div>
 								</a>
 							</div>
-							<div class="mix col-md-6 col-lg-4 gallery-item cat-4 cat-2">
-								<a href="ajax/portfolio-ajax-project-1.html" class="gallery-item-content pp">
-									<div class="item-thumbnail">
-										<img src="assets/images/7.jpg" alt="">
-										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Project Title
-												</h4>
-												<span class="project-category">Marketing</span>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="mix col-md-6 col-lg-4 gallery-item cat-3 cat-2">
-								<a href="ajax/portfolio-ajax-project-2.html" class="gallery-item-content pp">
-									<div class="item-thumbnail">
-										<img src="assets/images/8.jpg" alt="">
-										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Project Title
-												</h4>
-												<span class="project-category">Marketing</span>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="mix col-md-6 col-lg-4 gallery-item cat-3 cat-1">
-								<a href="ajax/portfolio-ajax-project-3.html" class="gallery-item-content pp">
-									<div class="item-thumbnail">
-										<img src="assets/images/9.jpg" alt="">
-										<div class="content-overlay">
-											<div class="content">
-												<h4 class="project-title">
-													Project Title
-												</h4>
-												<span class="project-category">Marketing</span>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div> -->
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</section>
 		<!-- Portfolio Area End -->
 
-		<!-- Blog List  Area Start -->
-		<section class="blogs blog-page sidebar section-padding  section-bg" id="blog">
+		<!-- Blog List Area Start -->
+		<section class="blogs blog-page sidebar section-padding section-bg" id="blog">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-heading">
 							<h2 class="s-h-title">
-								My <span>Blog</span>
+								Tulisan <span>Terbaru</span>
 							</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-12">
-						<div class="row">
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-box">
-									<div class="blog-images">
-										<img src="assets/images/b1.jpg" class="img-fluid" alt="">
-									</div>
-									<div class="blog-details">
-										<ul class="post-meta-one">
-											<li>
-												<p><i class="fa fa-user"></i> By, <span class="username">Admin</span>
-												</p>
-											</li>
-											<li>
-												<p><i class="fa fa-clock-o"></i> 24 Nov, 2019 </p>
-											</li>
-										</ul>
-
-										<div class="blog-title" data-toggle="modal" data-target="#blogmodal">
-											5 reasons why your website needs more wh...
-										</div>
-										<p class="text">
-											Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance
-											in. Supposing tolerably applauded.
-										</p>
-									</div>
-								</div>
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="blog-box glass-card h-100 p-0" style="overflow: hidden;">
+							<div class="blog-images">
+								<img src="assets/images/b1.jpg" class="img-fluid w-100" alt="">
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-box">
-									<div class="blog-images">
-										<img src="assets/images/b2.jpg" class="img-fluid" alt="">
-									</div>
-									<div class="blog-details">
-										<ul class="post-meta-one">
-											<li>
-												<p><i class="fa fa-user"></i> By, <span class="username">Admin</span>
-												</p>
-											</li>
-											<li>
-												<p><i class="fa fa-clock-o"></i> 24 Nov, 2019 </p>
-											</li>
-										</ul>
-
-										<div class="blog-title" data-toggle="modal" data-target="#blogmodal">
-											7 steps to optimize your website for Mil...
-										</div>
-										<p class="text">
-											Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance
-											in. Supposing tolerably applauded.
-										</p>
-									</div>
+							<div class="blog-details p-4">
+								<ul class="post-meta-one d-flex justify-content-between mb-3" style="font-size: 13px;">
+									<li>
+										<p><i class="fa fa-user"></i> Ichsan</p>
+									</li>
+									<li>
+										<p><i class="fa fa-clock-o"></i> 24 Nov, 2023</p>
+									</li>
+								</ul>
+								<div class="blog-title mb-3">
+									<a href="#"
+										style="color: var(--text-heading); font-size: 18px; font-weight: 600;">Mengapa
+										Website Perlu Modernisasi?</a>
 								</div>
+								<p class="text" style="font-size: 14px;">
+									Pembahasan mengenai pentingnya memperbarui teknologi dan desain website untuk
+									pengalaman pengguna yang lebih baik.
+								</p>
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-box">
-									<div class="blog-images">
-										<img src="assets/images/b3.jpg" class="img-fluid" alt="">
-									</div>
-									<div class="blog-details">
-										<ul class="post-meta-one">
-											<li>
-												<p><i class="fa fa-user"></i> By, <span class="username">Admin</span>
-												</p>
-											</li>
-											<li>
-												<p><i class="fa fa-clock-o"></i> 16 Nov, 2019 </p>
-											</li>
-										</ul>
-										<div class="blog-title" data-toggle="modal" data-target="#blogmodal">
-											8 Things To Know When Designing Augmente...
-										</div>
-										<p class="text">
-											Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance
-											in. Supposing tolerably applauded.
-										</p>
-									</div>
-								</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="blog-box glass-card h-100 p-0" style="overflow: hidden;">
+							<div class="blog-images">
+								<img src="assets/images/b2.jpg" class="img-fluid w-100" alt="">
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-box">
-									<div class="blog-images">
-										<img src="assets/images/b4.jpg" class="img-fluid" alt="">
-									</div>
-									<div class="blog-details">
-										<ul class="post-meta-one">
-											<li>
-												<p><i class="fa fa-user"></i> By, <span class="username">Admin</span>
-												</p>
-											</li>
-											<li>
-												<p><i class="fa fa-clock-o"></i> 16 Nov, 2019 </p>
-											</li>
-										</ul>
-
-										<div class="blog-title" data-toggle="modal" data-target="#blogmodal">
-											Sed ut perspiciatis unde omnis iste natu...
-										</div>
-										<p class="text">
-											Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance
-											in. Supposing tolerably applauded.
-										</p>
-									</div>
+							<div class="blog-details p-4">
+								<ul class="post-meta-one d-flex justify-content-between mb-3" style="font-size: 13px;">
+									<li>
+										<p><i class="fa fa-user"></i> Ichsan</p>
+									</li>
+									<li>
+										<p><i class="fa fa-clock-o"></i> 10 Dec, 2023</p>
+									</li>
+								</ul>
+								<div class="blog-title mb-3">
+									<a href="#"
+										style="color: var(--text-heading); font-size: 18px; font-weight: 600;">Tips
+										Optimasi Laravel</a>
 								</div>
+								<p class="text" style="font-size: 14px;">
+									Cara meningkatkan performa aplikasi Laravel dengan teknik caching dan query
+									optimization.
+								</p>
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-box">
-									<div class="blog-images">
-										<img src="assets/images/b5.jpg" class="img-fluid" alt="">
-									</div>
-									<div class="blog-details">
-										<ul class="post-meta-one">
-											<li>
-												<p><i class="fa fa-user"></i> By, <span class="username">Admin</span>
-												</p>
-											</li>
-											<li>
-												<p><i class="fa fa-clock-o"></i> 16 Nov, 2019 </p>
-											</li>
-										</ul>
-
-										<div class="blog-title" data-toggle="modal" data-target="#blogmodal">
-											A series of iOS 7 inspire vector Questio...
-										</div>
-										<p class="text">
-											Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance
-											in. Supposing tolerably applauded.
-										</p>
-									</div>
-								</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="blog-box glass-card h-100 p-0" style="overflow: hidden;">
+							<div class="blog-images">
+								<img src="assets/images/b3.jpg" class="img-fluid w-100" alt="">
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="blog-box">
-									<div class="blog-images">
-										<img src="assets/images/b6.jpg" class="img-fluid" alt="">
-									</div>
-									<div class="blog-details">
-										<ul class="post-meta-one">
-											<li>
-												<p><i class="fa fa-user"></i> By, <span class="username">Admin</span>
-												</p>
-											</li>
-											<li>
-												<p><i class="fa fa-clock-o"></i> 16 Feb, 2019 </p>
-											</li>
-										</ul>
-
-										<div class="blog-title" data-toggle="modal" data-target="#blogmodal">
-											The 5 Real Questions to Ask Potential We...
-										</div>
-										<p class="text">
-											Repulsive questions contented him few extensive supported. Of remarkably thoroughly he appearance
-											in. Supposing tolerably applauded.
-										</p>
-									</div>
+							<div class="blog-details p-4">
+								<ul class="post-meta-one d-flex justify-content-between mb-3" style="font-size: 13px;">
+									<li>
+										<p><i class="fa fa-user"></i> Ichsan</p>
+									</li>
+									<li>
+										<p><i class="fa fa-clock-o"></i> 15 Jan, 2024</p>
+									</li>
+								</ul>
+								<div class="blog-title mb-3">
+									<a href="#"
+										style="color: var(--text-heading); font-size: 18px; font-weight: 600;">Memulai
+										Vue.js 3</a>
 								</div>
+								<p class="text" style="font-size: 14px;">
+									Panduan singkat untuk pemula yang ingin belajar framework frontend Vue.js versi
+									terbaru.
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Blog List  Area End -->
+		<!-- Blog List Area End -->
 
 		<!-- Contact Us Area Start -->
-		<section class="contact contact-info-area section-padding  section-bg" id="contact">
+		<section class="contact contact-info-area section-padding section-bg" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="section-heading">
 							<h2 class="s-h-title">
-								HUBUNGI <span>SAYA</span>
+								Hubungi <span>Saya</span>
 							</h2>
+							<p>Apakah Anda memiliki proyek yang ingin didiskusikan? Hubungi saya.</p>
 						</div>
 					</div>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-lg-4 col-md-6">
-						<!-- Single Info -->
-						<div class="single-info">
+						<div class="single-info glass-card">
 							<div class="info-icon">
-								<i class="fa fa-rocket"></i>
+								<i class="fa fa-map-marker-alt"></i>
 							</div>
 							<div class="info-content">
-								<h5>Alamat:</h5>
-								<p>Jl. Bersama Gg.ikhlas No.2</p>
+								<h5>Alamat</h5>
+								<p>Jl. jl. bb no.25, rt.8/rw.1, menteng dalam, kota jakarta selatan, daerah khusus
+									ibukota jakarta</p>
 							</div>
-
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<!-- Single Info -->
-						<div class="single-info">
+						<div class="single-info glass-card">
 							<div class="info-icon">
-								<i class="fa fa-phone"></i>
+								<i class="fa fa-phone-alt"></i>
 							</div>
 							<div class="info-content">
-								<h5>Nomor HP:</h5>
-								<p>+62852 6282 7436</p>
+								<h5>Nomor HP/WA</h5>
+								<p>0851-7347-6478</p>
 							</div>
-
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<!-- Single Info -->
-						<div class="single-info">
-
+						<div class="single-info glass-card">
 							<div class="info-icon">
-								<i class="fa fa-envelope"></i>
+								<i class="fa fa-paper-plane"></i>
 							</div>
 							<div class="info-contentr">
-								<h5>Email:</h5>
-								<p>014ichsanm@gmail.com</p>
+								<h5>Email</h5>
+								<p>013ichsanm@gmail.com</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!--/.row-->
+				<div class="row mt-5">
+					<div class="col-lg-12 text-center">
+						<p style="color: var(--text-main); font-size: 14px;">
+							&copy; 2024 M. Ichsan Portfolio. Dikesain dengan <i class="fas fa-heart"
+								style="color: var(--accent)"></i>.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- Contact Us Area End -->
 	</div>
 	<!-- Main Website wrapper End -->
-
-	<!-- Blog Modal Start-->
-	<div class="modal fade" id="blogmodal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</div>
-					<div class="blog-details">
-						<div class="blog-content">
-							<div class="feature-image">
-								<img src="assets/images/b1.jpg" class="img-fluid" alt="">
-							</div>
-							<div class="content">
-								<h3 class="title">
-									By an outlived insisted procured improved am. Paid hill fine ten now love even leaf.
-								</h3>
-								<ul class="post-meta">
-									<li>
-										<a href="#">
-											<i class="fas fa-user-tie"></i>
-											<span>Alex Jole</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="far fa-calendar-alt"></i>
-											<span>
-												February 21, 2019
-											</span>
-										</a>
-									</li>
-
-								</ul>
-								<p>
-									Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as
-									is agreed admire so on result parish. Put use set uncommonly announcing and travelling. Allowance
-									sweetness direction to as necessary. Principle oh explained excellent do my suspected conveying in.
-								</p>
-								<p>
-									Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use
-									set
-									uncommonly announcing and travelling.
-								</p>
-							
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Blog Modal End-->
 
 	<!-- Main jquery and all jquery plugin hear -->
 	<script src="assets/js/jquery.js"></script>
@@ -1038,8 +672,20 @@
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<script src="assets/js/main.js"></script>
 
+	<script>
+		// Custom script to initialize typed.js correctly for the new content
+		$(document).ready(function () {
+			if ($('#typed').length) {
+				var typed = new Typed('#typed', {
+					strings: ["Websites.", "Web Apps.", "Backends."],
+					typeSpeed: 100,
+					backSpeed: 50,
+					loop: true
+				});
+			}
+		});
+	</script>
+
 </body>
 
-
-<!-- Mirrored from geniusdevs.com/themeforest/icard/icard/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jan 2022 04:28:10 GMT -->
 </html>

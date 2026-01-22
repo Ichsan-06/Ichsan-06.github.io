@@ -3,45 +3,73 @@ $(function ($) {
 
   jQuery(document).ready(function () {
 
+    // Toggle Menu for Mobile
     $(".toggle-icon").on("click", function () {
-      $(".my-navbar").toggleClass("show");
-      $(".mainmenu-area").toggleClass("show");
+      $(".my-navbar").toggleClass("active"); // Changed from show to active to match CSS
+      $(".mainmenu-area").toggleClass("active"); // Changed from show to active to match CSS
+      $("#nav-icon3").toggleClass("open");
     });
 
-    $("#nav-icon3").click(function () {
-      $(this).toggleClass("open");
-    });
-
+    // Navigation logic using href IDs instead of nth-child
     $(".my-navbar .mynav-item").on("click", function (e) {
       if (!$(this).hasClass("active")) {
-        var tabNum = $(this).index();
-        var nthChild = tabNum + 2;
+        // Update active menu item
         $(".my-navbar .mynav-item").removeClass("active");
         $(this).addClass("active");
+
+        // Get the target section ID from the link's href
+        var targetId = $(this).find("a").attr("href");
+
+        // Switch active section
         $("#main > section.active").removeClass("active");
-        $("#main > section:nth-child(" + nthChild + ")").addClass("active");
+        $(targetId).addClass("active");
+
+        // Close mobile menu if open
+        $(".my-navbar").removeClass("active");
+        $(".mainmenu-area").removeClass("active");
+        $("#nav-icon3").removeClass("open");
       }
       e.preventDefault();
     });
 
-    $("#home .pagelink").on("click", function (e) {
+    // Handle "View Portfolio" button click
+    $("a[href='#portfolio']").on("click", function (e) {
       e.preventDefault();
-      if (e.target.parentNode.id = "g-p-f-h") {
-        $(".my-navbar .mynav-item").removeClass("active");
-        $(".my-navbar .mynav-item.portfolio").addClass("active");
-        $(".my-navbar .mynav-item .portfolio").addClass("active");
-        $(".project-gallery").addClass("active");
-      }
+
+      // Activate Portfolio Menu Item
+      $(".my-navbar .mynav-item").removeClass("active");
+      $(".my-navbar .mynav-item.portfolio").addClass("active");
+
+      // Show Portfolio Section
+      $("#main > section.active").removeClass("active");
+      $("#portfolio").addClass("active");
     });
 
-    //Mixitup js
-    $(".project-gallery").mixItUp();
+    // Handle "Contact Me" button click
+    $("a[href='#contact']").on("click", function (e) {
+      e.preventDefault();
 
-    /*Typed Activate*/
+      // Activate Contact Menu Item
+      $(".my-navbar .mynav-item").removeClass("active");
+      // Find the li containing the contact link
+      $(".my-navbar .mynav-item a[href='#contact']").parent().addClass("active");
+
+      // Show Contact Section
+      $("#main > section.active").removeClass("active");
+      $("#contact").addClass("active");
+    });
+
+
+    // Mixitup js for Portfolio filtering
+    if ($(".project-gallery").length) {
+      $(".project-gallery").mixItUp();
+    }
+
+    /* Typed.js Activation */
     var $typed = $("#typed");
     if ($typed.length > 0) {
       $typed.typed({
-        strings: ["Web Design", "Web Development", "UI/UX Design"],
+        strings: ["Websites.", "Web Apps.", "Backends.", "System Design."],
         stringsElement: null,
         typeSpeed: 70,
         startDelay: 150,
@@ -56,94 +84,27 @@ $(function ($) {
       });
     }
 
-    // statistics jquery circle progressbar initialization
+    // Statistics circle progressbar
     var $section = $("#statisticsSection");
     if ($section.length > 0) {
       $(".progress-circle").loading();
     }
 
+    /* 
+       Disabled Ajax Magnific Popup for now as we are using static cards.
+       If you want to re-enable ajax content, uncomment the original code blocks.
+       For now, we just initialize simple image popups if class exists.
+    */
     $(".lightbox").magnificPopup({
       type: "image",
     });
 
-    $(".image-preview").magnificPopup({
-      type: "image",
-      gallery: {
-        enabled: true,
-      },
-    });
-
-    // Ajax On Modal 
-    $(".service-area-wrapper").each(function () {
-      $(this).magnificPopup({
-        delegate: ".service-modal:visible",
-        type: "ajax",
-        tLoading:
-          '<div class="preloader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>',
-        mainClass: "mfp-fade",
-        closeBtnInside: true,
-        midClick: true,
-        gallery: {
-          enabled: true,
-        },
-      });
-    });
-    $('.project-gallery-item').each(function() {
-      $(this).magnificPopup({
-        delegate: '.pp:visible',
-          type: "ajax",
-        tLoading: '<div class="preloader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>',
-        mainClass: "mfp-fade",
-        closeBtnInside: true,
-        midClick: true,
-        gallery: {
-            enabled: true,
-          },
-        callbacks: {
-          ajaxContentAdded: function() {
-            $(".owl-carousel").each(function (index) {
-              var a = $(this);
-              $(this).owlCarousel({
-              autoplay: a.data('autoplay'),
-              center: a.data('center'),
-              autoplayTimeout: a.data('autoplaytimeout'),
-              autoplayHoverPause: a.data('autoplayhoverpause'),
-              loop: a.data('loop'),
-              speed: a.data('speed'),
-              nav: a.data('nav'),
-              dots: a.data('dots'),
-              autoHeight: a.data('autoheight'),
-              autoWidth: a.data('autowidth'),
-              margin: a.data('margin'),
-              stagePadding: a.data('stagepadding'),
-              slideBy: a.data('slideby'),
-              lazyLoad: a.data('lazyload'),
-              navText:['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-              animateOut: a.data('animateOut'),
-              animateIn: a.data('animateIn'),
-              video: a.data('video'),
-              items: a.data('items'),
-              responsive:{
-                0:{items: a.data('items-xs'),},
-                576:{items: a.data('items-sm'),},
-                768:{items: a.data('items-md'),},
-                992:{items: a.data('items-lg'),}
-              }	
-                      });
-                  });
-              }
-          }
-      });
-      });
-});
+  });
 
   $(window).on('load', function () {
-    /*Preloader*/
+    /* Preloader */
     var preLoder = $("#preloader");
     preLoder.addClass('hide');
   });
-
-
-
 
 });
